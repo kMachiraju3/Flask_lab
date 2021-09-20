@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/app.css')}}">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+      <h1>Flask App</h1>
+    
+      <section class="content">
+        <div class="inner-container hero">
+          <h1>
+            Hello, my name is Kiran Machiraju. I am a Student Assistant at Columbus State University, Web Developer Intern.</h1>
+          </div>
+      </section>
+      <section class="outer-container space-bottom">
+        <img src="../static/css/images/Mypicture.jpg" alt="Kiran" />
+      </section>
+      <section class="inner-container space-bottom">
+        <h3>About:</h3>
+        <p>
+          Hard-working Computer Science – Web Development major currently attending Columbus State University, with 11 months of work experience. Aiming to leverage a proven knowledge of web design, website architecture, and web page content skills to successfully fill the Intern role as a web developer. Frequently praised as proactive by my peers, can be relied upon to help your company achieve its goals. 
+        </p>
+      </section>
+      
+      <footer class="border">
+        <p>By <bold>Kiran Machiraju<span id="footer-date"></span></bold></p>
+      </footer>
+
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="c8bff290c41b0d5aa565b21d-text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+        ga('create', 'UA-51618306-1', 'benadam.me');
+        ga('send', 'pageview');
+    </script>
+    
+    <script src="/static/js/main.js" type="c8bff290c41b0d5aa565b21d-text/javascript"></script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="c8bff290c41b0d5aa565b21d-|49" defer=""></script>
+</body>
+</html>
